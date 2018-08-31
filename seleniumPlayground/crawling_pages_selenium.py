@@ -58,7 +58,7 @@ def crawl_page():
     display.start()
 
     # Starts the browser and opens the first page
-    home = webdriver.Chrome()
+    home = webdriver.Chrome('/usr/lib/chromium-browser/chromedriver')
     home.get("https://www.digitec.ch/de/Sale")
 
     print("started the crawling function")
